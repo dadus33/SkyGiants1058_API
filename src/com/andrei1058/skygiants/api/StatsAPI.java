@@ -2,8 +2,6 @@ package com.andrei1058.skygiants.api;
 
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
-
 public class StatsAPI {
 
     //Use the uuid methods if the player is null
@@ -70,6 +68,22 @@ public class StatsAPI {
     public Integer getKills(Player p) {
         if (hasDatabase()) {
             return 121;
+        }
+        return 0;
+    }
+
+    /**
+     * Gets the player's games played number.
+     */
+    public Integer getGamesPlayed(Player player){
+        if (hasDatabase()) {
+            return 30;
+        }
+        return 0;
+    }
+    public Integer getGamesPlayed(String uuid){
+        if (hasDatabase()) {
+            return 30;
         }
         return 0;
     }
@@ -271,6 +285,21 @@ public class StatsAPI {
      * Gets the top by Rampages.
      */
     public String[] getTopRampages(Integer topNumber) {
+        if (hasDatabase()) {
+            String[] list = new String[topNumber];
+            int x = topNumber;
+            for (int i = 0; i < topNumber; i++) {
+                list[i] = "2abf5b34-ff44-4fa4-bd57-1dcd3fc1c53d,"+String.valueOf(x-i)+",andrei1058";
+            }
+            return list;
+        }
+        return null;
+    }
+
+    /**
+     * Gets the top by Games Played.
+     */
+    public String[] getTopGamesPlayed(Integer topNumber) {
         if (hasDatabase()) {
             String[] list = new String[topNumber];
             int x = topNumber;
