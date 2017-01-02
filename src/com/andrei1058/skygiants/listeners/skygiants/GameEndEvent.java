@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class GameEndEvent extends Event {
 
     //This returns the winers (team)
-    private ArrayList<Player> getWinners(){
+    public ArrayList<Player> getWinners(){
         return null;
 
     }

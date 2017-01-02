@@ -18,35 +18,35 @@ public class GameJoinEvent extends Event {
         return player;
     }
 
-    private Integer getGameStatus(){
+    public Integer getGameStatus(){
         return 1;
     }
 
-    private ArrayList<Player> getPlayers(){
+    public ArrayList<Player> getPlayers(){
         return null;
     }
 
-    private ArrayList<Player> getMagentaTeam(){
+    public ArrayList<Player> getMagentaTeam(){
         return null;
     }
 
-    private ArrayList<Player> getBlueTeam(){
+    public ArrayList<Player> getBlueTeam(){
         return null;
     }
 
-    private ArrayList<Player> getGreenTeam(){
+    public ArrayList<Player> getGreenTeam(){
         return null;
     }
 
-    private ArrayList<Player> getGoldTeam(){
+    public ArrayList<Player> getGoldTeam(){
         return null;
     }
 
-    private boolean isSkyGiantsMini(){
+    public boolean isSkyGiantsMini(){
         return true;
     }
 
-    private static ArrayList<Player> getSpectators(){
+    public static ArrayList<Player> getSpectators(){
         return null;
     }
 

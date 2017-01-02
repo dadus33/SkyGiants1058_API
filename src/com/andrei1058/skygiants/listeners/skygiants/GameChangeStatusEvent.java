@@ -6,12 +6,12 @@ import org.bukkit.event.HandlerList;
 public class GameChangeStatusEvent extends Event {
 
     //0 == lobby, 1 == starting, 2 == playing, 3 == restarting
-    private Integer getStatus(){
+    public Integer getStatus(){
         return 2;
     }
 
     //Is warmup?
-    private boolean isWarmup(){
+    public boolean isWarmup(){
         return false;
     }
 
