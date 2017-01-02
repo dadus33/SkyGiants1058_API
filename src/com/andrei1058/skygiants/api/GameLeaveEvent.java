@@ -1,4 +1,4 @@
-package com.andrei1058.skygiants.listeners.skygiants;
+package com.andrei1058.skygiants.api;
 
 
 import org.bukkit.entity.Player;

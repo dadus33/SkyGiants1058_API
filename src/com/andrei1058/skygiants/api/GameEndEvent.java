@@ -1,18 +1,17 @@
-package com.andrei1058.skygiants.listeners.skygiants;
+package com.andrei1058.skygiants.api;
 
+import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class GameChangeStatusEvent extends Event {
+import java.util.ArrayList;
 
-    //0 == lobby, 1 == starting, 2 == playing, 3 == restarting
-    public Integer getStatus(){
-        return 2;
-    }
+public class GameEndEvent extends Event {
 
-    //Is warmup?
-    public boolean isWarmup(){
-        return false;
+    //This returns the winers (team)
+    public ArrayList<Player> getWinners(){
+        return null;
+
     }
 
     private static final HandlerList handlers = new HandlerList();
